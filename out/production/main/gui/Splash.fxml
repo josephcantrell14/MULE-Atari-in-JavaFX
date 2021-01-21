@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="mainMenuPane" maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #B8B8B8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+      <BorderPane fx:id="mainMenuBorderPane" layoutX="-1.0" layoutY="-2.0" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #B8B8B8;">
+         <left>
+            <Region prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Region prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <Text fx:id="mainMenuMule" style="-fx-background-color: #B8B8B8;" text="M.U.L.E." BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="150.0" />
+               </font>
+            </Text>
+         </center>
+         <bottom>
+            <Text fx:id="mainMenuClick" onMouseClicked="#displayStartScreenMainMenu" style="-fx-background-color: #B8B8B8;" text="Click Here to Start!" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </bottom>
+      </BorderPane>
+   </children>
+</Pane>

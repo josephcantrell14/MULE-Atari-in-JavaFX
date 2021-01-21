@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.String?>
+
+<GridPane fx:id="gridPane" alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="720.0" prefWidth="1280" style="-fx-background-color: #B8B8B8;" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <SplitPane fx:id="playerConfigPane" dividerPositions="0.5" maxHeight="720.0" maxWidth="1280.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #B8B8B8;" visible="false">
+               <items>
+                  <GridPane>
+                     <children>
+                        <AnchorPane fx:id="playerAnchor3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                           <children>
+                              <Text layoutX="129.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 3">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="14.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+                              <Text layoutX="10.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Race:" />
+                              <Text layoutX="15.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color:" />
+                              <TextField fx:id="player3Name" layoutX="66.0" layoutY="75.0" promptText="Enter Name Here" />
+                              <RadioButton fx:id="player3RaceFlapper" layoutX="60.0" layoutY="140.0" mnemonicParsing="false" selected="true" text="Flapper">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="player3Races" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="player3RaceHuman" layoutX="60.0" layoutY="170.0" mnemonicParsing="false" text="Human" toggleGroup="$player3Races" />
+                              <RadioButton fx:id="player3RaceOther" layoutX="60.0" layoutY="200.0" mnemonicParsing="false" text="Other" toggleGroup="$player3Races" />
+                              <RadioButton fx:id="player3ColorRed" layoutX="60.0" layoutY="240.0" mnemonicParsing="false" text="Red">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="player3Colors" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="player3ColorBlue" layoutX="60.0" layoutY="270.0" mnemonicParsing="false" text="Blue" toggleGroup="$player3Colors" />
+                              <RadioButton fx:id="player3ColorGreen" layoutX="60.0" layoutY="300.0" mnemonicParsing="false" selected="true" text="Green" toggleGroup="$player3Colors" />
+                              <RadioButton fx:id="player3ColorYellow" layoutX="60.0" layoutY="330.0" mnemonicParsing="false" text="Yellow" toggleGroup="$player3Colors" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="playerAnchor4" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+                           <children>
+                              <Text layoutX="129.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 4">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="14.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+                              <Text layoutX="14.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Race:" />
+                              <Text layoutX="15.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color:" />
+                              <TextField fx:id="player4Name" layoutX="66.0" layoutY="75.0" promptText="Enter Name Here" />
+                              <RadioButton fx:id="player4RaceFlapper" layoutX="60.0" layoutY="140.0" mnemonicParsing="false" selected="true" text="Flapper">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="player4Races" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="player4RaceHuman" layoutX="60.0" layoutY="170.0" mnemonicParsing="false" text="Human" toggleGroup="$player4Races" />
+                              <RadioButton fx:id="player4RaceOther" layoutX="60.0" layoutY="200.0" mnemonicParsing="false" text="Other" toggleGroup="$player4Races" />
+                              <RadioButton fx:id="player4ColorRed" layoutX="60.0" layoutY="240.0" mnemonicParsing="false" text="Red">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="player4Colors" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="player4ColorBlue" layoutX="60.0" layoutY="270.0" mnemonicParsing="false" text="Blue" toggleGroup="$player4Colors" />
+                              <RadioButton fx:id="player4ColorGreen" layoutX="60.0" layoutY="300.0" mnemonicParsing="false" text="Green" toggleGroup="$player4Colors" />
+                              <RadioButton fx:id="player4ColorYellow" layoutX="60.0" layoutY="330.0" mnemonicParsing="false" selected="true" text="Yellow" toggleGroup="$player4Colors" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="playerAnchor1" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="player1title" layoutX="129.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="player1nametext" layoutX="14.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+                              <Text fx:id="player1racetext" layoutX="14.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Race:" />
+                              <Text fx:id="player1colortext" layoutX="15.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color:" />
+                              <TextField fx:id="player1Name" layoutX="66.0" layoutY="75.0" promptText="Enter Name Here" />
+                              <RadioButton fx:id="player1RaceFlapper" layoutX="60.0" layoutY="140.0" mnemonicParsing="false" selected="true" text="Flapper">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="player1Races" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="player1RaceHuman" layoutX="60.0" layoutY="170.0" mnemonicParsing="false" text="Human" toggleGroup="$player1Races" />
+                              <RadioButton fx:id="player1RaceOther" layoutX="60.0" layoutY="200.0" mnemonicParsing="false" text="Other" toggleGroup="$player1Races" />
+                              <RadioButton fx:id="player1ColorRed" layoutX="60.0" layoutY="240.0" mnemonicParsing="false" selected="true" text="Red">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="player1Colors" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="player1ColorBlue" layoutX="60.0" layoutY="270.0" mnemonicParsing="false" text="Blue" toggleGroup="$player1Colors" />
+                              <RadioButton fx:id="player1ColorGreen" layoutX="60.0" layoutY="300.0" mnemonicParsing="false" text="Green" toggleGroup="$player1Colors" />
+                              <RadioButton fx:id="player1ColorYellow" layoutX="60.0" layoutY="330.0" mnemonicParsing="false" text="Yellow" toggleGroup="$player1Colors" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="playerAnchor2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <children>
+                              <Text layoutX="129.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="14.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+                              <Text layoutX="14.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Race:" />
+                              <Text layoutX="15.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color:" />
+                              <TextField fx:id="player2Name" layoutX="66.0" layoutY="75.0" promptText="Enter Name Here" />
+                              <RadioButton fx:id="player2RaceFlapper" layoutX="60.0" layoutY="140.0" mnemonicParsing="false" selected="true" text="Flapper">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="player2Races" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="player2RaceHuman" layoutX="60.0" layoutY="170.0" mnemonicParsing="false" text="Human" toggleGroup="$player2Races" />
+                              <RadioButton fx:id="player2RaceOther" layoutX="60.0" layoutY="200.0" mnemonicParsing="false" text="Other" toggleGroup="$player2Races" />
+                              <RadioButton fx:id="player2ColorRed" layoutX="60.0" layoutY="240.0" mnemonicParsing="false" text="Red">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="player2Colors" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="player2ColorBlue" layoutX="60.0" layoutY="270.0" mnemonicParsing="false" selected="true" text="Blue" toggleGroup="$player2Colors" />
+                              <RadioButton fx:id="player2ColorGreen" layoutX="60.0" layoutY="300.0" mnemonicParsing="false" text="Green" toggleGroup="$player2Colors" />
+                              <RadioButton fx:id="player2ColorYellow" layoutX="60.0" layoutY="330.0" mnemonicParsing="false" text="Yellow" toggleGroup="$player2Colors" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <AnchorPane fx:id="testAnchor" prefHeight="399.0" prefWidth="1278.0">
+                     <children>
+                        <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="367.0" prefWidth="1278.0" AnchorPane.bottomAnchor="-12.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button fx:id="startGameButton" mnemonicParsing="false" onAction="#startGame" text="Start Game">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <Pane fx:id="mainPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1326.0" style="-fx-background-color: #B8B8B8;">
+               <children>
+                  <HBox fx:id="headerStripe" layoutX="-2.0" layoutY="-3.0" maxWidth="1920" prefHeight="67.0" prefWidth="1307.0">
+                     <children>
+                        <TextField fx:id="config" editable="false" prefHeight="113.0" prefWidth="1290.0" style="-fx-background-color: #999999;" text="New Game Configuration">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <GridPane fx:id="grid" layoutX="67.0" layoutY="110.0" prefHeight="597.0" prefWidth="1280.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="157.0" minHeight="40.0" prefHeight="133.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="187.0" minHeight="0.6666717529296875" prefHeight="126.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="273.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="273.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="280.0" minHeight="10.0" prefHeight="153.0" valignment="CENTER" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="difficulty" editable="false" prefHeight="19.0" prefWidth="315.0" style="-fx-background-color: #B8B8B8;" text="Difficulty:">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="players" editable="false" prefHeight="0.0" prefWidth="343.0" style="-fx-background-color: #B8B8B8;" text="Number of Players:" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="mapType" editable="false" style="-fx-background-color: #B8B8B8;" text="Map Type:" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </TextField>
+                                 <!--<FXCollections fx:factory="observableArrayList">
+                                     <String fx:value="Beginner" />
+                                                                               <String fx:value="Standard" />
+                                                                               <String fx:value="Tournament" />
+                                                                           </FXCollections>-->
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
+                        <BorderPane prefHeight="369.0" prefWidth="652.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <center>
+                              <Button fx:id="backButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#displayStartScreen" prefHeight="48.0" prefWidth="146.0" text="Back" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets left="18.0" />
+                                 </BorderPane.margin>
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                           </center>
+                        </BorderPane>
+                        <Button fx:id="continueButton" mnemonicParsing="false" onAction="#displayPlayerConfig" text="Continue" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                        <RadioButton fx:id="difficultyRadioButton1" mnemonicParsing="false" selected="true" text="Beginner" GridPane.columnIndex="1">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="difficultyRadioButtonGroup" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="difficultyRadioButton2" disable="true" mnemonicParsing="false" text="Standard" toggleGroup="$difficultyRadioButtonGroup" GridPane.columnIndex="2" />
+                        <RadioButton fx:id="difficultyRadioButton3" disable="true" mnemonicParsing="false" text="Tournament" toggleGroup="$difficultyRadioButtonGroup" GridPane.columnIndex="3" />
+                        <RadioButton fx:id="numberOfPlayersRadioButton1" mnemonicParsing="false" selected="true" text="2 Players" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="numberOfPlayersRadioButtonGroup" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="numberOfPlayersRadioButton2" mnemonicParsing="false" text="3 Players" toggleGroup="$numberOfPlayersRadioButtonGroup" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <RadioButton fx:id="numberOfPlayersRadioButton3" mnemonicParsing="false" text="4 Players" toggleGroup="$numberOfPlayersRadioButtonGroup" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <RadioButton fx:id="mapTypeRadioButton1" mnemonicParsing="false" selected="true" text="Standard" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="mapTypeRadioButtonGroup" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="mapTypeRadioButton2" disable="true" mnemonicParsing="false" text="Random" toggleGroup="$mapTypeRadioButtonGroup" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</GridPane>

@@ -1,0 +1,1720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<SplitPane dividerPositions="0.6909547738693468" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GUIController">
+   <items>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <BorderPane fx:id="PlayerRankBP" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <center>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="250.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="ScoreText" strokeType="OUTSIDE" strokeWidth="0.0" text="Money">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p1MoneyScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="29.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p2MoneyScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p3MoneyScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p4MoneyScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                           </children></StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="250.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="PlotText" strokeType="OUTSIDE" strokeWidth="0.0" text="Plot">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p1PlotScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="29.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p2PlotScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p3PlotScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p4PlotScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                           </children></StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="250.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="AssetsText" strokeType="OUTSIDE" strokeWidth="0.0" text="Assets">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p1AssetsScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="29.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p2AssetsScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p3AssetsScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p4AssetsScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                           </children></StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="250.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="TotalText" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p1TotalScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="29.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p2TotalScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p3TotalScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Text fx:id="p4TotalScore" strokeType="OUTSIDE" strokeWidth="0.0" text="XXXX">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                           </children></StackPane>
+                     </children>
+                  </HBox>
+               </center>
+               <top>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Player Scores">
+                           <font>
+                              <Font size="50.0" />
+                           </font>
+                        </Text>
+                     </children></StackPane>
+               </top>
+               <left>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Region prefHeight="150.0" prefWidth="200.0" />
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="p1ScoreName" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font></Text>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="p2ScoreName" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font></Text>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="p3ScoreName" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 3">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font></Text>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="p4ScoreName" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 4">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font></Text>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+               </left>
+               <bottom>
+                  <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="100.0" prefWidth="632.0">
+                           <children>
+                              <Button fx:id="saveButton" mnemonicParsing="false" text="Save Game">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="100.0" prefWidth="736.0">
+                           <children>
+                              <Button fx:id="nextRound" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" text="Next Round">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+               </bottom>
+               <right>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-border-color: black;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Order of Next Round">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="firstPlayer" strokeType="OUTSIDE" strokeWidth="0.0" text="Player X" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="secondPlayer" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Y" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="thirdPlayer" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Z" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="fourthPlayer" strokeType="OUTSIDE" strokeWidth="0.0" text="Player W" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+               </right>
+            </BorderPane>
+            <VBox fx:id="pub" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pub">
+                           <font>
+                              <Font size="53.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="gambleButton" mnemonicParsing="false" onAction="#gamble" text="Gamble">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="pub2town" mnemonicParsing="false" onAction="#showTown" text="Return to Town">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="gambleMoneyEarned" strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: false;" text="You have won $XXX!">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+            <HBox fx:id="townPane" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="320.0">
+                     <children>
+                        <Button fx:id="storeButton" mnemonicParsing="false" onAction="#showStore" prefHeight="720.0" prefWidth="1280.0" text="Store" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="320.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="720.0" prefWidth="1280.0" text="Assay" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="320.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#showPub" prefHeight="720.0" prefWidth="1280.0" text="Pub" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="320.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="720.0" prefWidth="1280.0" text="Land Office" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="320.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#showMap" prefHeight="720.0" prefWidth="1280.0" text="Back to Map" />
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+            <AnchorPane fx:id="mapPane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <GridPane prefHeight="313.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="tileButton1" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/grass.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner1" fill="#2129ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                              <ImageView fx:id="mule1" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                 <image>
+                                    <Image url="@M.U.L.E..png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <children>
+                              <Button fx:id="tileButton2" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/grass.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner2" fill="#ff2121" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                              <ImageView fx:id="mule2" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                 <image>
+                                    <Image url="@M.U.L.E..png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
+                           <children>
+                              <Button fx:id="tileButton3" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@mountain1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Circle fx:id="owner3" fill="#46ff21" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                              <ImageView fx:id="mule3" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                 <image>
+                                    <Image url="@M.U.L.E..png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3">
+                           <children>
+                              <Button fx:id="tileButton4" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner4" fill="#fffd21" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                              <ImageView fx:id="mule4" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                 <image>
+                                    <Image url="@M.U.L.E..png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4">
+                           <children>
+                              <Button fx:id="tileButton5" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/gui/river.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Circle fx:id="owner5" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                              <ImageView fx:id="mule5" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                 <image>
+                                    <Image url="@M.U.L.E..png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5">
+                           <children>
+                              <Button fx:id="tileButton6" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner6" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                              <ImageView fx:id="mule6" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                 <image>
+                                    <Image url="@M.U.L.E..png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6">
+                           <children>
+                              <Button fx:id="tileButton7" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@mountain3.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Circle fx:id="owner7" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                              <ImageView fx:id="mule7" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                 <image>
+                                    <Image url="@M.U.L.E..png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7">
+                           <children>
+                              <Button fx:id="tileButton8" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner8" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                              <ImageView fx:id="mule8" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                 <image>
+                                    <Image url="@M.U.L.E..png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8">
+                           <children>
+                              <Button fx:id="tileButton9" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner9" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                              <ImageView fx:id="mule9" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                 <image>
+                                    <Image url="@M.U.L.E..png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="tileButton13" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner13" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                              <ImageView fx:id="mule13" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                 <image>
+                                    <Image url="@M.U.L.E..png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="tileButton14" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/gui/river.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Circle fx:id="owner14" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule14" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="tileButton15" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner15" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule15" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="tileButton16" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner16" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule16" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="tileButton17" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner17" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule17" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="tileButton18" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@mountain3.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Circle fx:id="owner18" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule18" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="2">
+                           <children>
+                              <Button fx:id="tileButton19" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@mountain3.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Circle fx:id="owner19" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule19" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <Button fx:id="tileButton20" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner20" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule20" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="tileButton10" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner10" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                              <ImageView fx:id="mule10" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                 <image>
+                                    <Image url="@M.U.L.E..png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="tileButton11" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@mountain1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Circle fx:id="owner11" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                              <ImageView fx:id="mule11" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                 <image>
+                                    <Image url="@M.U.L.E..png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <Button fx:id="tileButton12" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner12" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                              <ImageView fx:id="mule12" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                 <image>
+                                    <Image url="@M.U.L.E..png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <children>
+                              <Button fx:id="tileButton21" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner21" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule21" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <children>
+                              <Button fx:id="tileButton22" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner22" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule22" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                           <children>
+                              <Button fx:id="tileButton23" disable="true" mnemonicParsing="false" onAction="#showTown" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Town.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                           <children>
+                              <Button fx:id="tileButton24" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner24" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule24" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                           <children>
+                              <Button fx:id="tileButton25" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner25" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule25" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                           <children>
+                              <Button fx:id="tileButton26" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner26" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule26" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                           <children>
+                              <Button fx:id="tileButton27" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@mountain1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Circle fx:id="owner27" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule27" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="3">
+                           <children>
+                              <Button fx:id="tileButton28" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner28" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule28" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <children>
+                              <Button fx:id="tileButton29" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@mountain2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Circle fx:id="owner29" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule29" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <children>
+                              <Button fx:id="tileButton30" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner30" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule30" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <children>
+                              <Button fx:id="tileButton31" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner31" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule31" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                           <children>
+                              <Button fx:id="tileButton32" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/gui/river.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Circle fx:id="owner32" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule32" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                           <children>
+                              <Button fx:id="tileButton33" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner33" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule33" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                           <children>
+                              <Button fx:id="tileButton34" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@mountain2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Circle fx:id="owner34" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule34" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                           <children>
+                              <Button fx:id="tileButton35" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner35" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule35" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="3">
+                           <children>
+                              <Button fx:id="tileButton36" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner36" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule36" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="tileButton37" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner37" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule37" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="tileButton38" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner38" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule38" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="tileButton39" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@mountain2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Circle fx:id="owner39" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule39" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="tileButton40" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner40" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule40" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="tileButton41" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@/gui/river.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Circle fx:id="owner41" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule41" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="tileButton42" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner42" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule42" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="tileButton43" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner43" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule43" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="tileButton44" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;" />
+                              <Circle fx:id="owner44" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule44" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="tileButton45" mnemonicParsing="false" onAction="#handleTileClick" prefHeight="400.0" prefWidth="400.0" style="-fx-background-image: url('/gui/river.png'); -fx-border-width: 1; -fx-border-color: #000000;">
+                                 <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@mountain2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Circle fx:id="owner45" fill="#1f93ff" radius="10.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                               <ImageView fx:id="mule45" fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.0;" visible="false">
+                                   <image>
+                                       <Image url="@M.U.L.E..png" />
+                                   </image>
+                               </ImageView>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <GridPane fx:id="storePane" visible="false">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="15.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" percentHeight="5.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Store" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="69.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Buy" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="44.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sell" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="44.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="buyFoodButton" mnemonicParsing="false" onAction="#buyFood" text="Food" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buyEnergyButton" mnemonicParsing="false" onAction="#buyEnergy" text="Energy" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buyOreButton" mnemonicParsing="false" onAction="#buyOre" text="Ore" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buyCrystiteButton" mnemonicParsing="false" onAction="#buyCrystite" text="Crystite" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sellFoodButton" mnemonicParsing="false" onAction="#sellFood" text="Food" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sellOreButton" mnemonicParsing="false" onAction="#sellOre" text="Ore" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sellEnergyButton" mnemonicParsing="false" onAction="#sellEnergy" text="Energy" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sellCrystiteButton" mnemonicParsing="false" onAction="#sellCrystite" text="Crystite" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buyFoodMuleButton" mnemonicParsing="false" onAction="#buyFoodMule" text="Food Mule" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="buyOreMuleButton" mnemonicParsing="false" onAction="#buyOreMule" text="Ore Mule" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="buyEnergyMuleButton" mnemonicParsing="false" onAction="#buyEnergyMule" text="Energy Mule" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="30" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="50" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="30" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="50" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="25" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="100" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="25" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="100" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="100 base price" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="100 base price" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="100 base price" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="125 final price" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="175 final price" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="150 final price" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+                  <Button fx:id="storeBackButton" mnemonicParsing="false" onAction="#showTown" prefWidth="250.0" text="Back" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="System Bold" size="35.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <GridPane layoutX="109.0" layoutY="90.0" prefHeight="218.0" prefWidth="1278.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <StackPane fx:id="p1Stats" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: red;">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="p1Name" strokeType="OUTSIDE" strokeWidth="0.0" text="P1 Name">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="p1MoneyText" strokeType="OUTSIDE" strokeWidth="0.0" text="Money" />
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Food" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Energy" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ore" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Crystite" />
+                                                   </children>
+                                                </StackPane>
+                                             </children>
+                                          </VBox>
+                                          <ImageView fx:id="p1MULEIcon" fitHeight="60.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" style="visibility: false;">
+                                             <image>
+                                                <Image url="@M.U.L.E..png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p1FoodText" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p1EnergyText" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p1OreText" strokeType="OUTSIDE" strokeWidth="0.0" text="XXX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p1CrystiteText" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" />
+                                                   </children>
+                                                </StackPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </StackPane>
+                              <StackPane fx:id="p1Indicator" prefHeight="150.0" prefWidth="200.0" visible="false">
+                                 <children>
+                                    <ImageView fx:id="p1Avatar" fitHeight="256.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@avatar42.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children></StackPane>
+                           </children>
+                        </VBox>
+                     </children></StackPane>
+                  <StackPane fx:id="p2Stats" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: red;" GridPane.columnIndex="1">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="p2Name" strokeType="OUTSIDE" strokeWidth="0.0" text="P2 Name">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="p2MoneyText" strokeType="OUTSIDE" strokeWidth="0.0" text="Money" />
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Food" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Energy" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ore" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Crystite" />
+                                                   </children>
+                                                </StackPane>
+                                             </children>
+                                          </VBox>
+                                          <ImageView fx:id="p2MULEIcon" fitHeight="60.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" style="visibility: false;">
+                                             <image>
+                                                <Image url="@M.U.L.E..png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p2FoodText" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p2EnergyText" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p2OreText" strokeType="OUTSIDE" strokeWidth="0.0" text="XXX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p2CrystiteText" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" />
+                                                   </children>
+                                                </StackPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </StackPane>
+                              <StackPane fx:id="p2Indicator" prefHeight="150.0" prefWidth="200.0" visible="false">
+                                 <children>
+                                    <ImageView fx:id="p2Avatar" fitHeight="256.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@avatar42.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children></StackPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+                  <StackPane fx:id="p3Stats" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: red;" GridPane.columnIndex="2">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="p3Name" strokeType="OUTSIDE" strokeWidth="0.0" text="P3 Name">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="p3MoneyText" strokeType="OUTSIDE" strokeWidth="0.0" text="Money" />
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Food" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Energy" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ore" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Crystite" />
+                                                   </children>
+                                                </StackPane>
+                                             </children>
+                                          </VBox>
+                                          <ImageView fx:id="p3MULEIcon" fitHeight="60.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" style="visibility: false;">
+                                             <image>
+                                                <Image url="@M.U.L.E..png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p3FoodText" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p3EnergyText" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p3OreText" strokeType="OUTSIDE" strokeWidth="0.0" text="XXX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p3CrystiteText" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" />
+                                                   </children>
+                                                </StackPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </StackPane>
+                              <StackPane fx:id="p3Indicator" prefHeight="150.0" prefWidth="200.0" visible="false">
+                                 <children>
+                                    <ImageView fx:id="p3Avatar" fitHeight="256.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@avatar42.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children></StackPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+                  <StackPane fx:id="p4Stats" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: red;" GridPane.columnIndex="3">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="p4Name" strokeType="OUTSIDE" strokeWidth="0.0" text="P4 Name">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="p4MoneyText" strokeType="OUTSIDE" strokeWidth="0.0" text="Money" />
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Food" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Energy" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ore" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Crystite" />
+                                                   </children>
+                                                </StackPane>
+                                             </children>
+                                          </VBox>
+                                          <ImageView fx:id="p4MULEIcon" fitHeight="60.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" style="visibility: false;">
+                                             <image>
+                                                <Image url="@M.U.L.E..png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p4FoodText" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p4EnergyText" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p4OreText" strokeType="OUTSIDE" strokeWidth="0.0" text="XXX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="p4CrystiteText" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" />
+                                                   </children>
+                                                </StackPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </StackPane>
+                              <StackPane fx:id="p4Indicator" prefHeight="150.0" prefWidth="200.0" visible="false">
+                                 <children>
+                                    <ImageView fx:id="p4Avatar" fitHeight="256.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@avatar42.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children></StackPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: gray;" GridPane.columnIndex="4">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Store">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Food" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Energy" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ore" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Crystite" />
+                                                   </children>
+                                                </StackPane>
+                                             </children>
+                                          </VBox>
+                                          <ImageView fitHeight="60.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@M.U.L.E..png" />
+                                             </image>
+                                          </ImageView>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="storeFood" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="storeEnergy" strokeType="OUTSIDE" strokeWidth="0.0" text="XXX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="storeOre" strokeType="OUTSIDE" strokeWidth="0.0" text="XXX" />
+                                                   </children>
+                                                </StackPane>
+                                                <StackPane prefHeight="150.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Text fx:id="storeCrystite" strokeType="OUTSIDE" strokeWidth="0.0" text="XX" />
+                                                   </children>
+                                                </StackPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="storeMULES" strokeType="OUTSIDE" strokeWidth="0.0" text="XXX" />
+                                 </children></StackPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: gray;" GridPane.columnIndex="5">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Timer">
+                                       <font>
+                                          <Font size="35.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Region prefHeight="200.0" prefWidth="200.0" />
+                                          <Text fx:id="timerText" strokeType="OUTSIDE" strokeWidth="0.0" text="XX">
+                                             <font>
+                                                <Font size="36.0" />
+                                             </font>
+                                          </Text>
+                                          <Region prefHeight="200.0" prefWidth="200.0" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox prefHeight="17.0" prefWidth="213.0">
+                                       <children>
+                                          <Region prefHeight="200.0" prefWidth="200.0" />
+                                          <StackPane fx:id="currentPlayerID" prefHeight="150.0" prefWidth="200.0" />
+                                          <Region prefHeight="200.0" prefWidth="200.0" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <StackPane prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Round: ">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fx:id="roundText" strokeType="OUTSIDE" strokeWidth="0.0" text="X ">
+                                                   <font>
+                                                      <Font size="22.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </HBox>
+                                 </children></StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <StackPane prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Button fx:id="passTurn" mnemonicParsing="false" onAction="#passTurn" text="Pass Turn" />
+                                             </children>
+                                          </StackPane>
+                                          <StackPane prefHeight="150.0" prefWidth="200.0">
+                                             <children>
+                                                <Button fx:id="saveButton" disable="true" mnemonicParsing="false" onAction="#saveGame" text="Save Game" />
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </HBox>
+                                 </children></StackPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </GridPane>
+         </children></AnchorPane>
+   </items>
+</SplitPane>
